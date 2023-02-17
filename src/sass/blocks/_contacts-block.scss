@@ -1,0 +1,86 @@
+.contacts {
+
+    &__title {}
+
+    &__col {
+
+        &_map {}
+
+        &_info {}
+    }
+
+    &__info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__info-item {
+        margin-bottom: 15px;
+        a {
+            display: flex;
+            align-items: center;
+
+            text-decoration: none;
+
+            &:hover span {
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+
+        svg {
+            max-width: 14px;
+            max-height: 24px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: 700;
+            font-size: rem(20);
+            color: #000000;
+            transition: .2s;
+        }
+
+        &_vk svg {
+            max-width: 26px;
+            max-height: 26px;
+        }
+
+        &_vk span {
+            font-weight: 400;
+        }
+    }
+
+    &__info-sub-list {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__info-sub-item {
+        align-items: center;}
+
+    &__form {}
+
+    &__form-input {}
+
+    &__form-item {}
+
+    &__form-btn {}
+
+    &__info-form-title {}
+}
+
+.main-form {
+
+    &__title {}
+
+    &__input {}
+
+    &__item {}
+
+    &__btn {}
+}

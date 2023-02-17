@@ -1,5 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Burger-menu
+
+    if (window.innerWidth <= 992) {
+        const menu = document.querySelector(".header__col_menu");
+        const menuBtn = document.querySelector(".header__menu-burger");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            menuBtn.classList.toggle("collapsed");
+        })
+    }
+
+    // Offer slider
+
+    if (document.querySelector(".home-offer__slider")) {
+        $(".home-offer__slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+        })
+    }
+ 
     // Lazy-load for map
 
     if (document.querySelector(".map-container")) {

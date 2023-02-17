@@ -42,7 +42,7 @@ function style() {
 
 // Просто перенос html файлов | Just transferring html files
 function html() {
-    return src('src/*/pages.html')
+    return src('src/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -76,7 +76,7 @@ function startWatch() {
     watch(['src/images/**/*'], images);
     watch(['src/svg/src/**/*'], svgsprite);
     watch(['src/fonts/**/*'], fonts);
-    watch(['src/svg/src/**/*'], svgsprite)
+    watch(['src/svg/**/*'], svgsprite)
 }
 
 

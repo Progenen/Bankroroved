@@ -65,18 +65,20 @@
 }
 
 // Fonts
-@include font-face('Bitter', '../fonts/Bitter/Bitter-Bold', bold, normal, ttf);
-@include font-face('Bitter', '../fonts/Bitter/Bitter-Regular', 400, normal, ttf);
-
+@include font-face('Raleway', '../fonts/Raleway/Raleway-Bold', bold, normal, ttf);
+@include font-face('Raleway', '../fonts/Raleway/Raleway-Regular', 400, normal, ttf);
+@include font-face('Lato', '../fonts/Lato/Lato-Bold', bold, normal, ttf);
+@include font-face('Lato', '../fonts/Lato/Lato-Medium', 500, normal, ttf);
+@include font-face('Lato', '../fonts/Lato/Lato-Regular', 400, normal, ttf);
 // Vars
 
-$braun: #005B24;
-$braunHover: #275e3d;
+$blue: #0380B2;
+$gray: #333333;
 $milk: #F5F5F5;
 
 // Путь к спрайту для конкатенации
 
-$sprite: "../svg/dest/stack/sprite.svg#";
+$sprite: "../svg/stack/sprite.svg#";
 
 
 // Mixins
